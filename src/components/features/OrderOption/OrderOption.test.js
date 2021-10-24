@@ -12,7 +12,7 @@ describe('Component Hero', () => {
         const component = shallow(<OrderOption />);
         expect(component).toEqual({});
       });
-      it('should render correct correct name', () => {
+      it('should render correct name', () => {
         const expectedName = 'OrderName';
         const component = shallow(<OrderOption name={expectedName} type="icons" />);
         const renderedName = component.find('h3.title').text();

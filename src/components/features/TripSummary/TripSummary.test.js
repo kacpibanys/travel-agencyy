@@ -1,6 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import TripSummary from './TripSummary.js'
+
 describe('Component TripSummary',() => {
     it('should render correct link', () => {
         const expectedLink = '/trip/abc';
@@ -43,4 +44,5 @@ describe('Component TripSummary',() => {
         const component = shallow(<TripSummary tags={tagsProp} />);
         console.log(component.debug());
       });
+
 });
